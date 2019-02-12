@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <h1 class="text-center py-5 bg-light"><strong>emporium.</strong></h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Elements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            
+            <div id="fonctions-sup">
+                <div id="light-mode"></div>
+                <div id="dark-mode"></div>
+                
+                <button class="btn btn-secondary">Connexion</button>
+                <!--Le modal qui va apparaitre pour la connexion-->
+                <div id="modal" class="d-none">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <div id="connection">
+                            <h1>Connection</h1>
+                            <form action="">
+                                <label for="connection-id">ID</label><br>
+                                <input id="connection-id" type="text"><br>
+                                <label for="connection-psw">Password</label><br>
+                                <input id="connection-psw" type="password"><br>
+                            </form>
+                            <button class="switch btn btn-secondary">Inscription</button>
+                        </div>
+
+                        <div id="inscription" class="d-none">
+                            <h1>Inscription</h1>
+                            <form action="">
+                                <label for="inscription-id">ID</label><br>
+                                <input id="inscription-id" type="text"><br>
+                                <label for="inscription-psw">Password</label><br>
+                                <input id="inscription-psw" type="password"><br>
+                                <label for="confirm-psw">Confirm password</label><br>
+                                <input id="confirm-psw" type="password"><br>
+                            </form>
+                            <button class="switch btn btn-secondary">Connection</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <section id="section-top">
+        <div class="row">
+            <div class="col-4 offset-2">
+                <h1><span class="text-danger">Shop at</span><br><strong >emporium.</strong></h1>
+                <p>A wonderful serenity has taken possession of my entire soul, like <br>these sweet mornings of spring which I enjoy with my emporium</p>
+                <a href="" class="bg-danger badge badge-pill text-light py-3 px-5">SALE ITEMS</a>
+            </div>
+            
+            <div class="col-5">
+                <img src="./public/img/js_projet_web/images/slider-1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <section id="section-services" class="pb-5">
+        <div class="row">
+            <div class="col-4">
+                <div class="service">
+                    <img src="./public/img/js_projet_web/images/services/service-1.jpg" alt="">
+                    <p>Living Room</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="service">
+                    <img src="./public/img/js_projet_web/images/services/service-2.jpg" alt="">
+                    <p>Sale Items</p>
+                </div>
+                
+            </div>
+            <div class="col-4">
+                <div class="service">
+                    <img src="./public/img/js_projet_web/images/services/slider-3.jpg" alt="">
+                    <p>Clothes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="section-recent-product">
+        <h3 class="text-center my-5">Recent Products</h3>
+        <div class="row w-50 mx-auto">
+            <div class="col-4">
+                <img src="./public/img/js_projet_web/images/products_mini/product-luxry-sofa.jpg" alt="" class="mb-4">
+                <p>Luxury Sofa</p>
+                <p class="text-danger">$800.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./public/img/js_projet_web/images/products_mini/product-gloves.jpg" alt="" class="mb-4">
+                <div class="row">
+                    <div class="col-1 offset-2">
+                        <span class="sale bg-danger text-light">Sale!</span>
+                    </div>
+                    <div class="col-8">
+                        <p>Leather Gloves</p>
+                        <p class="text-danger"><span class="text-secondary">$34.00</span> $27.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="./public/img/js_projet_web/images/products_mini/product-cups.jpg" alt="" class="mb-4">
+                <p>Colorful Bowl</p>
+                <p class="text-danger">$18.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./public/img/js_projet_web/images/products_mini/product-bag.jpg" alt="" class="mb-4">
+                <div class="row">
+                    <div class="col-1 offset-2">
+                        <span class="sale bg-danger text-light">Sale!</span>
+                    </div>
+                    <div class="col-8">
+                        <p>Woman Bag</p>
+                        <p class="text-danger"><span class="text-secondary">$420.00</span> $350.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="./public/img/js_projet_web/images/products_mini/product-tshitr.jpg" alt="" class="mb-4">
+                <p>Minimal T-shirt</p>
+                <p class="text-danger">$15.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./public/img/js_projet_web/images/products_mini/product-plates.jpg" alt="" class="mb-4">
+                <p>Plates Set</p>
+                <p class="text-danger">$30.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./public/img/js_projet_web/images/products_mini/product-modern-sofa.jpg" alt="" class="mb-4">
+                <p>Modern Sofa</p>
+                <p class="text-danger">$900.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./public/img/js_projet_web/images/products_mini/product-bed.jpg" alt="" class="mb-4">
+                <p>Bed Linen</p>
+                <p class="text-danger">$79.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./public/img/js_projet_web/images/products_mini/product-shoes.jpg" alt="" class="mb-4">
+                <p>Minimal Shoes</p>
+                <p class="text-danger">$60.00</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="section-discover">
+        <h2>Discover Thousands Of Great Products</h2>
+        <a href="" class="bg-danger badge badge-pill text-light py-3 px-5">LEARN MORE</a>
+    </section>
+    
+    <section id="section-carousel">
+        
+    </section>
+    
+    <section id="section-shipping" class="mb-4">
+        <div class="row text-center">
+            <div class="col-4">
+                <i class="far fa-check-circle"></i>
+                <p><strong>TRUSTED BY 10,000+ CUSTOMERS</strong></p>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, ther lives the blind texts.</p>
+                <a href="" class="btn btn-dark px-4 py-3 mt-5">LEARN MORE</a>
+            </div>
+            <div class="col-4 bg-danger text-light">
+                <i class="fas fa-paper-plane"></i>
+                <p><strong>VERY FAST SHIPPING</strong></p>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, ther lives the blind texts.</p>
+                <a href="" class="btn btn-light px-4 py-3 mt-5">LEARN MORE</a>
+            </div>
+            <div class="col-4">
+                <i class="far fa-check-circle"></i>
+                <p><strong>TRUSTED BY 10,000+ CUSTOMERS</strong></p>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, ther lives the blind texts.</p>
+                <a href="" class="btn btn-dark px-4 py-3 mt-5">LEARN MORE</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="pt-5">
+        <div class="row mx-auto pb-5">
+            <div class="col-4">
+                <h5 class="text-light">ABOUT US</h5>
+                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of</p>
+            </div>
+            <div class="col-4" id="col-footer-mid">
+                <h5 class="text-light">RECENT POSTS</h5>
+                <p>> Hello world!</p>
+                <hr>
+                <p>> Wonderful serenity has taken</p>
+                <hr>
+                <p>> In my soul and absord its power</p>
+                <hr>
+                <p>> I hear the buzz of the title</p>
+                <hr>
+            </div>
+            <div class="col-4" id="tag-cloud">
+                <h5 class="text-light">TAG CLOUD</h5>
+                <a href="">Business</a>
+                <a href="">Conference</a>
+                <a href="">Gadget</a>
+                <a href="">Identity</a>
+                <a href="">Logo</a>
+                <a href="">Photograph</a>
+                <a href="">Time</a>
+                <a href="">Trips</a>
+                <a href="">Works</a>
+                <a href="">Work space</a>
+            </div>
+        </div>
+        
+        <div id="sub-footer">
+            <p>COPYRIGHT 2020 GOODLAYERS, ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+    
+    <script src="./src/js/app.js"></script>
+</body>
+</html>
