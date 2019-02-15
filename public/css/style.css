@@ -16250,10 +16250,7 @@ h1 {
 #modal {
   z-index: 10;
   position: fixed;
-  top: 50vh;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 25%;
   min-width: 400px;
   border-radius: 5px;
   background-color: #f3f3f3;
@@ -16339,12 +16336,12 @@ h1 {
   }
 }
 
-#modal .popIn {
+.popIn {
   -webkit-animation: popIn 1s;
           animation: popIn 1s;
 }
 
-#modal .popOut {
+.popOut {
   -webkit-animation: popOut 0.3s;
           animation: popOut 0.3s;
 }

@@ -20,9 +20,7 @@ h1 {
 #modal {
     z-index: 10;
     position: fixed;
-    top: 50vh;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    top: 25%;
     min-width: 400px;
     border-radius: 5px;
     background-color: #f3f3f3;
@@ -55,28 +53,29 @@ h1 {
             margin-bottom: 20px;
         }
     }
-
-
-    //Animation d'entrée et de sortie
-    @keyframes popIn {
-        0% {transform: scale(0.5);} 
-        90% {transform: scale(1.1);}
-        100% {transform: scale(1);}
-    }
-    
-    @keyframes popOut {
-        0% {transform: scale(1);} 
-        100% {transform: scale(0.5);}
-    }
-
-    .popIn {
-        animation: popIn 1s;
-    }
-    
-    .popOut {
-        animation: popOut 0.3s;
-    }
 }
+//Animation d'entrée et de sortie pour le modal
+@keyframes popIn {
+    0% {transform: scale(0.5);} 
+    90% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+@keyframes popOut {
+    0% {transform: scale(1);} 
+    100% {transform: scale(0.5);}
+}
+
+.popIn {
+    animation: popIn 1s;
+}
+
+.popOut {
+    animation: popOut 0.3s;
+}
+
+
+
 
 //Sert à modifier la navbar quand l'écran est trop petit
 #navbar {

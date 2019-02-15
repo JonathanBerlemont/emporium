@@ -10,35 +10,37 @@
 
 <body>
     <!--Le modal qui va apparaitre pour la connexion-->
-    <div id="modal" class="d-none">
-        <div class="content py-4">
-            <span id="close-button">&times;</span>
-            <!--La div qui apparait quand on choisi la connexion-->
-            <div id="connection">
-                <h1>Connexion</h1>
-                <form>
-                    <label for="connection-id">ID</label><br>
-                    <input id="connection-id" type="email" required><br>
-                    <label for="connection-psw">Password</label><br>
-                    <input id="connection-psw" type="password" required><br>
-                    <button class="btn btn-success">Confirmer</button>
-                </form>
-                <button class="switch btn btn-secondary">Inscription</button>
-            </div>
-            
-            <!--La div qui apparait quand on choisi l'inscription-->
-            <div id="inscription" class="d-none">
-                <h1>Inscription</h1>
-                <form>
-                    <label for="inscription-id">ID</label><br>
-                    <input id="inscription-id" type="text" required><br>
-                    <label for="inscription-psw">Password</label><br>
-                    <input id="inscription-psw" type="password" required><br>
-                    <label for="confirm-psw">Confirm password</label><br>
-                    <input id="confirm-psw" type="password" required><br>
-                    <button class="btn btn-success">Confirmer</button>
-                </form>
-                <button class="switch btn btn-secondary">Connexion</button>
+    <div class="d-flex flex-row align-items-center justify-content-center">
+        <div id="modal" class="d-none">
+            <div class="content py-4">
+                <span id="close-button">&times;</span>
+                <!--La div qui apparait quand on choisi la connexion-->
+                <div id="connection">
+                    <h1>Connexion</h1>
+                    <form>
+                        <label for="connection-id">ID/Email</label><br>
+                        <input id="connection-id" type="email" required><br>
+                        <label for="connection-psw">Password</label><br>
+                        <input id="connection-psw" type="password" required><br>
+                        <button class="btn btn-success">Confirmer</button>
+                    </form>
+                    <button class="switch btn btn-secondary">Inscription</button>
+                </div>
+                
+                <!--La div qui apparait quand on choisi l'inscription-->
+                <div id="inscription" class="d-none">
+                    <h1>Inscription</h1>
+                    <form>
+                        <label for="inscription-id">ID/Email</label><br>
+                        <input id="inscription-id" type="email" required><br>
+                        <label for="inscription-psw">Password</label><br>
+                        <input id="inscription-psw" type="password" required><br>
+                        <label for="confirm-psw">Confirm password</label><br>
+                        <input id="confirm-psw" type="password" required><br>
+                        <button class="btn btn-success">Confirmer</button>
+                    </form>
+                    <button class="switch btn btn-secondary">Connexion</button>
+                </div>
             </div>
         </div>
     </div>

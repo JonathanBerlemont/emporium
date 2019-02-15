@@ -11,6 +11,8 @@ let div_connection = document.getElementById("connection");
 let div_inscription = document.getElementById("inscription");
 let body = document.getElementsByTagName("body")[0];
 
+let modal_inputs = [...modal.getElementsByTagName("input")];
+
 //Affichage du modal
 connection_button.addEventListener("click", () => {
     let first_input = modal.getElementsByTagName("input")[0];
@@ -55,6 +57,16 @@ close_button.addEventListener("click", () => {
         body.removeChild(body.firstChild);
         //reactive le scrolling de la page
         body.style.overflow = "";
+
+        if (!div_inscription.classList.contains("d-none")){
+            div_inscription.classList.add("d-none");
+            div_connection.classList.remove("d-none");
+        }
+
+        modal_inputs.forEach((element) => {
+            element.value = "";
+        })
+
     }, 300)
 
 })
