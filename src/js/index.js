@@ -1,7 +1,9 @@
 /*
-|--------------------|
+______________________
+|                    |
 |Modal de connection |
-|--------------------|
+|____________________|
+
 */
 let modal = document.getElementById("modal");
 let connection_button = document.querySelector("nav button");
@@ -84,18 +86,22 @@ for (let i = 0; i<switch_button.length; i++){
 }
 
 /*
-|---------------------------|
+_____________________________
+|                           |
 |Fin du modal de connection |
-|---------------------------|
+|___________________________|
+
 */
 
 
 
 
 /*
-|-----------------------------------------|
+___________________________________________
+|                                         |
 |Changement entre dark mode et light mode |
-|-----------------------------------------|
+|_________________________________________|
+
 */
 let dark_mode = document.getElementById("dark-mode");
 let light_mode = document.getElementById("light-mode");
@@ -123,9 +129,11 @@ light_mode.addEventListener("click", () => {
     navbar_h1.style.color = "black";
 })
 /*
-|------------------------------------------------|
+__________________________________________________
+|                                                |
 |Fin du changement entre dark mode et light mode |
-|------------------------------------------------|
+|________________________________________________|
+
 */
 
 
@@ -133,9 +141,11 @@ light_mode.addEventListener("click", () => {
 
 
 /*
-|------------------------------------------|
+____________________________________________
+|                                          |
 |Changement de la navbar pendant le scroll |
-|------------------------------------------|
+|__________________________________________|
+
 */
 
 let nav = document.getElementById("navbar");
