@@ -149,7 +149,7 @@ ____________________________________________
 */
 
 let nav = document.getElementById("navbar");
-let section_top = document.getElementById("section-top");
+let section_top = document.getElementById("section-baner");
 
 //rajout de padding à la transformation de la navbar pour eviter que la page ne remonte brusquement
 let nav_height = nav.clientHeight;

@@ -1,0 +1,49 @@
+footer {
+    $footer-gray: rgb(66, 66, 66);
+    background-color: rgb(44, 44, 44);
+
+    color: gray;
+
+    .row {
+        width: 65%;
+        .col-4 {
+            padding: 0 30px;
+
+            h5 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    #col-footer-mid {
+        border-left: solid $footer-gray 1px;
+        border-right: solid $footer-gray 1px;
+
+        padding-left: 30px;
+        padding-right: 30px;
+
+        hr {
+            background-color: $footer-gray;
+        }
+    }
+
+    #tag-cloud {
+        a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            border: solid 1px $footer-gray;
+            color: gray;
+        }
+    }
+
+    #sub-footer {
+        background-color: black;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+}
+.row {
+    margin: 0;
+}

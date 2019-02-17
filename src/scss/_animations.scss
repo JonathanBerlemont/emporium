@@ -1,0 +1,39 @@
+//Animation d'entrée et de sortie pour le modal
+@keyframes popIn {
+    0% {transform: scale(0.5);} 
+    90% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+@keyframes popOut {
+    0% {transform: scale(1);} 
+    100% {transform: scale(0.5);}
+}
+
+.popIn {
+    animation: popIn 1s;
+}
+
+.popOut {
+    animation: popOut 0.3s;
+}
+
+//Animation d'entrée et de sortie de la navbar avec burger
+@keyframes getIn {
+    0% {left: -100%;}
+    100% {left: 0;}
+}
+@keyframes getOut {
+    0% {left: 0;}
+    100% {left: -100%;}
+}
+
+.getIn {
+    animation: getIn 1s;
+    left: 0 !important;
+}
+
+.getOut {
+    animation: getOut 1s;
+    left: -100% !important;
+}

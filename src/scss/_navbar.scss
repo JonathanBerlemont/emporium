@@ -1,0 +1,124 @@
+//Sert à modifier la navbar quand l'écran est trop petit
+#navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    
+    //bouton burger
+    #burger {
+        position: absolute;
+        z-index: 51;
+        left: 15px;
+        top: 100px;
+
+        width: 38px;
+        border-radius: 5px;
+        background-color: gray;
+
+        font-size: 25px;
+        padding-left: 8px;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: rgb(94, 93, 93);
+        }
+
+        @media (min-width: 1000px){
+            display: none;
+        }
+    }
+
+    #navbar-h1 {
+        margin: 0;
+    }
+
+
+    @media (max-width: 1000px) {
+
+        //Header de la navbar
+        #navbar-h1 {
+            position: relative;
+            text-align: center;
+            margin: 0;
+            display: block;
+            float: none;
+        }
+
+
+        //Contenu de la navbar
+        nav {
+            z-index: 50;
+            position: absolute;
+            left: -100%;
+            border-radius: 0 0 10px 0;
+
+            li{
+                display: block !important;
+                text-align: left;
+            }
+    
+            #fonctions-sup {
+                left: 0;
+                position: relative;
+                display: inline-block;
+    
+                #light-mode, #dark-mode {
+                    left: 0;
+                    transform: translateX(130%);
+                }
+    
+                button {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+//Modifie la navbar quand on scroll 
+.navbar-scroll {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+
+
+    #navbar-h1 {
+        position: absolute;
+        float: left;
+        height: 100%;
+        margin-top: -40px !important; //Pour outrepasser les priorités d'ID
+        margin-left: 10px !important;
+        z-index: 51;
+        font-size: 25px;
+    }
+
+    li {
+        margin: 0 20px;
+    }
+}
+
+//Les boutons de themes et de connexion
+#fonctions-sup {
+    position: absolute;
+    right: 0;
+
+    div {
+        display: inline-block;      
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        border-radius: 5px;
+
+    }
+    #light-mode {  
+        background-color: white;
+        border: solid black 1px;
+    }
+    #dark-mode {
+        background-color: black;
+        border: solid white 1px;
+    }
+    button{
+        display: inline-block;
+    }
+}
