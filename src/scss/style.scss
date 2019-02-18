@@ -2,19 +2,19 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 //Eléments supplémentaires
-@import "./_animations.scss";
-@import "./_modal.scss";
-@import "./_navbar.scss";
-@import "./_scrollbar.scss";
+@import "./partials/_animations.scss";
+@import "./partials/_modal.scss";
+@import "./partials/_navbar.scss";
+@import "./partials/_scrollbar.scss";
 
 //Les différentes sections
-@import "./_section-baner.scss";
-@import "./_section-services.scss";
-@import "./_section-recent-products.scss";
-@import "./_section-discover.scss";
-@import "./_section-carousel.scss";
-@import "./_section-shipping.scss";
-@import "./_footer.scss";
+@import "./partials/_section-baner.scss";
+@import "./partials/_section-services.scss";
+@import "./partials/_section-recent-products.scss";
+@import "./partials/_section-discover.scss";
+@import "./partials/_section-carousel.scss";
+@import "./partials/_section-shipping.scss";
+@import "./partials/_footer.scss";
 
 //Fontawesome
 $fa-font-path: "../../public/webfonts";
