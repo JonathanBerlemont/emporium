@@ -16744,4 +16744,13 @@ readers do not read off random characters that represent icons */
 .fab {
   font-family: 'Font Awesome 5 Brands';
 }
+
+@font-face {
+  font-family: "poppins";
+  src: url("../../../public/fonts/Poppins/Poppins-Light.ttf");
+}
+
+body {
+  font-family: "poppins";
+}
 /*# sourceMappingURL=style.css.map */

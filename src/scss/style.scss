@@ -17,7 +17,7 @@
 @import "./partials/_footer.scss";
 
 //Fontawesome
-$fa-font-path: "../../public/webfonts";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "./partials/_fontawesome.scss";
+
+//Fonts
+@import "./partials/_fonts.scss";
