@@ -40,6 +40,9 @@ connection_button.addEventListener("click", () => {
     
     //Empeche le scroll pendant que le modal est ouvert
     body.style.overflow = "hidden";
+
+    //Empeche de cliquer sur le bouton connexion à nouveau
+    connection_button.setAttribute("disabled","");
 })
 
 //Fonctionalité du close button
@@ -72,8 +75,13 @@ close_button.addEventListener("click", () => {
         modal_inputs.forEach((element) => {
             element.value = "";
         })
+
+        //Réactive le bouton de connexion
+        connection_button.removeAttribute("disabled","");
         
     }, 300)
+
+    
     
 })
 

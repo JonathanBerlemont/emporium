@@ -7,7 +7,7 @@
 
 //Background
 ::-webkit-scrollbar-track {
-    background: $light; 
+    background: linear-gradient(to bottom, orange , yellow, green, cyan, blue, violet); 
 }
 
 //Section qui bouge
@@ -16,6 +16,4 @@
     background-size: 20px;
     background-repeat: no-repeat;
     background-position-y: 50%;
-    background-position-x: 50%;
 }
-

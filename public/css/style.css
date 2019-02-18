@@ -10710,6 +10710,10 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 20px;
 }
 
+#modal ::-webkit-scrollbar {
+  display: none;
+}
+
 #navbar {
   position: fixed;
   width: 100%;
@@ -10833,7 +10837,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f8f9fa;
+  background: -webkit-gradient(linear, left top, left bottom, from(orange), color-stop(yellow), color-stop(green), color-stop(cyan), color-stop(blue), to(violet));
+  background: linear-gradient(to bottom, orange, yellow, green, cyan, blue, violet);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -10841,7 +10846,6 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: 20px;
   background-repeat: no-repeat;
   background-position-y: 50%;
-  background-position-x: 50%;
 }
 
 #section-baner {
@@ -10932,7 +10936,6 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
   bottom: -100%;
-  z-index: 5;
   width: 100%;
   position: absolute;
   font-weight: 400;
