@@ -1,0 +1,21 @@
+//Scrollbar de la page
+
+//Largeur
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+//Background
+::-webkit-scrollbar-track {
+    background: $light; 
+}
+
+//Section qui bouge
+::-webkit-scrollbar-thumb {
+    background: url("../../public/img/Thinking_Face_Emoji_large.png"); 
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+

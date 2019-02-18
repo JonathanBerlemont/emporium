@@ -1,10 +1,11 @@
 //Librairies 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-//Animations et éléments supplémentaires
+//Eléments supplémentaires
 @import "./_animations.scss";
 @import "./_modal.scss";
 @import "./_navbar.scss";
+@import "./_scrollbar.scss";
 
 //Les différentes sections
 @import "./_section-baner.scss";
