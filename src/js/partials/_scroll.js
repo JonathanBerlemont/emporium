@@ -6,7 +6,8 @@ export function setScroll() {
     |__________________________________________|
     
     */
-    
+
+    let body = document.getElementsByTagName("body")[0];
     let nav = document.getElementById("navbar");
     let section_top = document.getElementById("section-baner");
     
@@ -39,7 +40,6 @@ export function setScroll() {
             
         } else {
             //quand on veut cacher la navbar
-            body.removeChild(body.firstChild);
             body.style.overflow = "";
             navbar_content.classList.remove("getIn");
             navbar_content.classList.add("getOut");
@@ -51,12 +51,4 @@ export function setScroll() {
         }
         
     })
-    
-    /*
-    ________________________________________________
-    |                                              |
-    |Fin changement de la navbar pendant le scroll |
-    |______________________________________________|
-    
-    */
 }

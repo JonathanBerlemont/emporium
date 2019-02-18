@@ -94,11 +94,4 @@ export function setModal() {
         })
     }
     
-    /*
-    _____________________________
-    |                           |
-    |Fin du modal de connection |
-    |___________________________|
-    
-    */
 }
