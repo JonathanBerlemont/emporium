@@ -10991,13 +10991,173 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 40px;
 }
 
-#section-carousel #carouselExampleIndicators {
-  width: 50%;
-  margin: 50px auto;
+#section-carousel {
+  /* Bootstrap Lightbox using Modal */
 }
 
-#section-carousel .carousel-item {
-  width: 150px;
+@media (min-width: 768px) {
+  #section-carousel {
+    /* show 3 items */
+    /* left or forward direction */
+    /* farthest right hidden item must be abso position for animations */
+    /* right or prev direction */
+  }
+  #section-carousel .carousel-inner .active,
+  #section-carousel .carousel-inner .active + .carousel-item,
+  #section-carousel .carousel-inner .active + .carousel-item + .carousel-item,
+  #section-carousel .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+    display: block;
+  }
+  #section-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  #section-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  #section-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+  #section-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    -webkit-transition: none;
+    transition: none;
+  }
+  #section-carousel .carousel-inner .carousel-item-next,
+  #section-carousel .carousel-inner .carousel-item-prev {
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  #section-carousel .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  #section-carousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  #section-carousel .carousel-item-next.carousel-item-left + .carousel-item,
+  #section-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  #section-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+  #section-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  #section-carousel .carousel-item {
+    margin-right: auto !important;
+  }
+  #section-carousel .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  #section-carousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  #section-carousel .carousel-item-prev.carousel-item-right + .carousel-item,
+  #section-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  #section-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+  #section-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+#section-carousel #profile-grid {
+  overflow: auto;
+  white-space: normal;
+}
+
+#section-carousel #profile-grid .profile {
+  padding-bottom: 40px;
+}
+
+#section-carousel #profile-grid .panel {
+  padding: 0;
+}
+
+#section-carousel #profile-grid .panel-body {
+  padding: 15px;
+}
+
+#section-carousel #profile-grid .profile-name {
+  font-weight: bold;
+}
+
+#section-carousel #profile-grid .thumbnail {
+  margin-bottom: 6px;
+}
+
+#section-carousel #profile-grid .panel-thumbnail {
+  overflow: hidden;
+}
+
+#section-carousel #profile-grid .img-rounded {
+  border-radius: 4px 4px 0 0;
+}
+
+#section-carousel .img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+#section-carousel .img-wrap img {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+#section-carousel .img-wrap .product-hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  bottom: -100%;
+  width: 100%;
+  position: absolute;
+  font-weight: 400;
+}
+
+#section-carousel .img-wrap .product-hover div {
+  color: white;
+  padding-top: 15px;
+  width: 50%;
+}
+
+#section-carousel .img-wrap .product-hover .bg-noir {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#section-carousel .img-wrap .product-hover .bg-rouge {
+  background-color: rgba(220, 35, 55, 0.8);
+}
+
+#section-carousel .img-wrap:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+#section-carousel .img-wrap:hover .product-hover {
+  bottom: 0;
+}
+
+#section-carousel .sale {
+  margin-bottom: 20px;
+}
+
+#section-carousel .sale span {
+  border-radius: 50%;
+  padding: 15px 10px;
+  display: block;
+}
+
+#section-carousel span.text-secondary {
+  text-decoration: line-through;
+}
+
+#section-carousel p {
+  font-weight: bold;
 }
 
 #section-shipping .col-12 {
