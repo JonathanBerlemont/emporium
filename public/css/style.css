@@ -10764,7 +10764,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   #navbar nav li {
     display: block !important;
-    text-align: left;
+    text-align: left !important;
   }
   #navbar nav #fonctions-sup {
     left: 0;
@@ -10799,10 +10799,6 @@ a.text-dark:hover, a.text-dark:focus {
   .navbar-scroll #navbar-h1 {
     margin-top: 0 !important;
   }
-}
-
-.navbar-scroll li {
-  margin: 0 20px;
 }
 
 #fonctions-sup {
