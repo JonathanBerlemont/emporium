@@ -94,6 +94,12 @@
             margin-top: 0 !important;
         }
     }
+
+    @media (min-width: 1000px){
+        li {
+            margin: 0 20px;
+        }
+    }
 }
 
 //Les boutons de themes et de connexion

@@ -10801,6 +10801,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@media (min-width: 1000px) {
+  .navbar-scroll li {
+    margin: 0 20px;
+  }
+}
+
 #fonctions-sup {
   position: absolute;
   right: 0;
